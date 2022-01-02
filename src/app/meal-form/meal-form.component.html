@@ -1,0 +1,16 @@
+<div>
+    <button (click)="goBack()">Back</button>
+    <button (click)="goSave()">Save</button>
+</div>
+<div>
+    <label for="food">Food</label>
+    <input [(ngModel)]="meal.food">
+</div>
+<div>
+    <label for="location">Location</label>
+    <input [(ngModel)]="meal.location">
+</div>
+<div>
+    <label for="date">Date</label>
+    <input [(ngModel)]="meal.date">
+</div>

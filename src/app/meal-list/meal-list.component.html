@@ -1,0 +1,8 @@
+<div>
+    <button routerLink="/meal-form">Add</button>
+</div>
+<div>
+    <ul *ngFor="let meal of meals">
+        <li><a routerLink="/meal-form/{{meal.id}}">{{ meal.food }}</a> <button (click)="goDelete(meal.id)">Delete</button></li>
+    </ul>
+</div>
